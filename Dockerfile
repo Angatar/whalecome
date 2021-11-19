@@ -14,5 +14,4 @@ ENV MESSAGE="Whalecome to the ProDev's initiation training to Docker!"
 
 WORKDIR /files
 
-ENTRYPOINT ["whalecome"]
-CMD ["You"]
+CMD ["whalecome"]
