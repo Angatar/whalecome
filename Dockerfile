@@ -8,7 +8,7 @@ RUN echo "https://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/reposi
 apk add --no-cache boxes figlet &&\
 chmod u+x /usr/bin/whalecome
 
-ENV WHALE_DRAW='gentle_whale.ascii' 
+ENV WHALE_DRAWN='gentle_whale.ascii' 
 ENV FONT_NAME='mini'
 ENV MESSAGE="Whalecome to the ProDev's initiation training to Docker!"
 

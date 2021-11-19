@@ -1,4 +1,4 @@
 #!/bin/sh
 
-(figlet -f ${FONT_NAME} ${MESSAGE}; echo -e "$(more $WHALE_DRAW)")|cat | boxes -d sunset
+(figlet -f ${FONT_NAME} ${MESSAGE}; echo -e "$(more $WHALE_DRAWN)")|cat | boxes -d sunset
 echo Hello "$*" ! | boxes -d unicornsay
