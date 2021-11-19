@@ -267,14 +267,15 @@ We could also break into the container with a shell terminal
 ```sh
 docker exec -it whalecome sh
 ```
-and see the process running into the container
+Note the **-it** options that means respectively interactive(allow stdin) and terminal (including session and prompt)
+You are in a shell terminal into the  and see the process running into the container
 
 ```sh
 $ ps
 ```
 and kill the running process which would stop the container and as the --rm option was provided to the run command the container would be completely removed
 
-The normal cycle of the container is to be run stopped, we can eventually start the stopped container, and finally removed
+The normal cycle of the container is run, stop, start (restart) the stopped container, and finally be removed
 
 to exit the container term type
 ```sh
