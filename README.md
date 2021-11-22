@@ -317,7 +317,7 @@ Add to the files the following instructions to the Dockerfile (feel free to adap
 FROM d3fk/whalecome:cmd
 COPY docker_whale.ascii /files/
 ENV MESSAGE="Whalecome among Docker users !"
-ENV FONT="big"
+ENV FONT_NAME="big"
 ENV WHALE_DRAWN=docker_whale.ascii
 ```
 Our image starts from the container indicated in the **FROM** line and so it will inherit of its characteristics.
