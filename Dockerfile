@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM alpine:latest
 LABEL org.opencontainers.image.authors="d3fk"
 
 COPY ["gentle_whale.ascii", "serious_whale.ascii", "/files/" ]
