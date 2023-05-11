@@ -10,7 +10,7 @@ chmod u+x /usr/bin/whalecome
 
 ENV WHALE_DRAWN='gentle_whale.ascii' 
 ENV FONT_NAME='mini'
-ENV MESSAGE="Whalecome to the ProDev's initiation training to Docker!"
+ENV MESSAGE="Whalecome to the DR12 and CESAR's training to Docker!"
 
 WORKDIR /files
 
