@@ -1,6 +1,6 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/d3fk/whalecome) ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/d3fk/whalecome) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/d3fk/whalecome) ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/d3fk/whalecome) ![Docker Stars](https://img.shields.io/docker/stars/d3fk/whalecome) [![GitHub license](https://img.shields.io/github/license/Angatar/whalecome)](https://github.com/Angatar/whalecome/blob/master/LICENSE)
 # whalecome (Angatar> d3fk/whalecome)
-A small container (alpine based) to serve as training material for a "ProDev" training class on Docker with almost no code (text/ascii files are mainly manipulated).
+A small container (alpine based) to serve as training material for training classes on Docker (ProDev, CESAR, CNRS DR12) with almost no code (text/ascii files are mainly manipulated).
 
 It contains a few additional packages + a small sh script that displays a Whalecome message and allows the user to display a "Hello world!" in different ways.
 
@@ -148,7 +148,7 @@ It seems the file is well in this repo but not in the container:
   ```sh
   docker run -v $(pwd)/docker_whale.ascii:gentle_whale.ascii d3fk/whalecome docker whale !
   ```
-  Note: in PowerShell replace $(pwd)/ by ${pwd}\
+  Note: in PowerShell replace `$(pwd)/` by `${pwd}\`
 
   - 4. **bis** use a volume to add content in the container
   The history of the alpine/git repo also shows that an unnamed volume is automatically created when running the alpine/git container.
@@ -179,7 +179,7 @@ on Linux shell
   ```sh
   docker run -v $GIT_VOLUME:/repo/ --env WHALE_DRAWN='/repo/whalecome/docker_whale.ascii' d3fk/whalecome docker whale !
   ```
-  on PowerShell replace $GIT_VOLUME by ${ENV:GIT_VOLUME}
+  on PowerShell replace `$GIT_VOLUME` by `${ENV:GIT_VOLUME}`
 
   Volumes can only be fully mounted in the container but you can choose their destinations.
 
@@ -307,7 +307,7 @@ In order to create your own whalecome image you have to create a Dockerfile that
 ```sh
 docker run -v $(pwd):/tmp -w /tmp -it busybox vi Dockerfile
 ```
-Note: in PowerShell replace $(pwd)/ by ${pwd}\
+Note: in PowerShell replace `$(pwd)/` by `${pwd}\`
 Note2: we are using -v to create a bind mount with the current host's directory to /tmp in the container
 Note3: as busybox does not declare a workdir, we use the **-w** option to define it ... at the same place we have created the bind mount in the container so that our command passed to the container will take effect in this directory = in our current directory
 ... if you are not comfortable with vi/vim, you can of course use your favorite code editor.
