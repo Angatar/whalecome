@@ -212,7 +212,7 @@ on Linux shell
 
   You can also use the prune to remove all unused local Volumes
   ```sh
-  docker volume prune -f
+  docker volume prune -a
   ```
   - 3. **and the images?**
   as well ... to list them
@@ -227,7 +227,7 @@ on Linux shell
 
   If you have a docker engine with image manager there is also a prune option to remove unused images only
   ```sh
-  docker image prune -f
+  docker image prune -a
   ```
   Note "image" here instead of image**s** (the -f here will only avoid prompt)
 
